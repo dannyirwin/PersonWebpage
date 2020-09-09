@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Raleway+Dots&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -36,9 +37,9 @@
             <h1 id="name">Daniel Irwin</h1>
             <div id="nameLine" class="line"></div>
             <div id="rolesContainer">
-                <a class="nav-link" href="#developer">Developer</a>
+               <h3 class="role">Developer </h3>
                 &
-                <a class="nav-link" href="#theatre">Theatre Artist</a>
+                <h3 class="role"> Theatre Artis</h3>
             </div>
 
         </div>
@@ -52,16 +53,19 @@
     </section>
 
     <section id="aboutMe">
-        <p>
-            With a veracious love of learning and a variety of professional skills, I pride myself on bring creative solutions to all my work. While my backgorund and formal exucation is in the fine arts, I have a deep love of aquiring and improving new skills. To that end, I have found software development the perfect mariage both creative and technical problem solving. Wether working in customer service, on the stage, or in development, I take an "audience" centric approach: how does everything that I do, big or small, contribue to the user's expeinece.
+        <p>Hello!</p>
+
+        <p> I am a young professional making the transition from a creer in the fine arts into the world of software development.</p>
+        <p> With a veracious love of learning and a variety of professional skills, I pride myself on bringing creative solutions to all my work. While my background and formal education is in the fine arts, I have a deep love of acquiring and improving new skills. To that end, I have found software development the perfect marriage both creative and technical problem solving. Whether working in customer service, on the stage, or in development, I take an "audience" centric approach: how does everything that I do, big or small, contribute to the user's experience.
         </p>
         <ul id="skills">
-            <li> Entry Level JavaScript, CSS, HTML proficient (FreeCodeCamp) and familiar with some libraries and frameworks</li>
-            <li>Basics of full-lifecycle video game devolmepnt in Unreal</li>
-            <li> Professional actor and music director for 10+ years</li>
-            <li> Customer service in restraunts and live entetertainment for 6 years</li>
+            <li> Entry Level JavaScript, CSS, HTML proficient (FreeCodeCamp) some front end libraries and frameworks such as JQuery, Flexbox, and React</li>
+            <li>Familiarity with full-lifecycle indie app development in Unreal</li>
+            <li> Professional actor and music director for 10+ years on the east coast and on a national tour</li>
+            <li> Customer experience professional in restaurants and live entertainment industry for 6 years</li>
 
         </ul>
+
     </section>
 
     <section id="projects">
@@ -72,16 +76,18 @@
 
             <div class="projectDiv">
                 <div id="sightless" class="projectHeader">
-                    <div class="readMoreButton">Read More</div>
+                    <div class="readMoreButton">
+                        <div class="readMoreText">Read More</div>
+                    </div>
                 </div>
 
                 <div class="projectDetails">
                     <p>
-                        Sightless VR is a completely auditory and haptic VR expeience for Occulus. I was approached by my good friend and develompent mentor who had the initial idea. The experience is fairly simple: navigate throuhg a 3D space using only the sounds around you and the haptic vibration from the controllers to get your barings. In the space, there are randomly place obsticles, enemies on patrol who will give chace, and mines scattered about. It was built using Unreal Engine and currently under review on the Occulus store</p>
+                        <b>Sightless VR</b> is a completely auditory and haptic VR experience for Oculus. I was approached by my good friend and development mentor who had the initial idea. The experience is fairly simple: navigate through a 3D space using only the sounds around you and the haptic vibration from the controllers to get your bearings. In the space, there are randomly placed obstacles, enemies on patrol who will give chase, and mines scattered about. It was built using Unreal Engine and currently under review on the Oculus store</p>
                     <p>
-                        This was my first experience developing with somebody else wich proved to be extremely educational. I was able to learn about version and source managment on a team, readability and documetation, and collaberative problem solving. It was also invaluable to see how a professional might work through the entire devolment process from initial concept meetings to publishing. Our personal goals with this project was to see how well we can work together, experiment with visualless feedback in VR, and to see the project all the way through publication.</p>
+                        This was my first experience developing with somebody else which proved to be extremely educational. I was able to learn about version and source management on a team, readability and documentation, and collaborative problem solving. It was also invaluable to see how a professional might work through the entire development process from initial concept meetings to publishing. Our personal goals with this project was to see how well we can work together, experiment with visualless feedback in VR, and to see the project all the way through publication.</p>
                     <p>
-                        Along with working on the mines and enemies, my main resposiblity was the sound and music managers, as well as composing and producing the music itself. One key feature which provided interesting challege for me was the dynamic music. As an indication of how far the player is to the exit, the music itslef changes to more or less complicated melodies. It was a lovely oportunity to use music theory and compositon tricks to solve programatic issues, and visa versa.
+                        Along with working on the mines and enemies, my main responsibility was the sound and music managers, as well as composing and producing the music itself. One key feature which provided an interesting challenge for me was the dynamic music. As an indication of how far the player is to the exit, the music itself changes to more or less complicated melodies. It was a lovely opportunity to use music theory and composition tricks to solve programmatic issues, and visa versa.
                     </p>
                 </div>
 
@@ -90,15 +96,17 @@
 
             <div class="projectDiv">
                 <div id="fameGame" class="projectHeader">
-                    <div class="readMoreButton">Read More</div>
+                    <div class="readMoreButton">
+                        <div class="readMoreText">Read More</div>
+                    </div>
                 </div>
 
                 <div class="projectDetails">
                     <p>
-                        The Fame Game is my run at building a web-based idle clicker game. The basic premise is that the player is attempting to accumulate "Fame" by slowing building up diferent kinds of followers and fans. Each type of follower generates "Fame" which serves as a currency to purcahse more followers which then compound.
+                        <b>The Fame Game</b> is my run at building a web-based idle clicker game. The basic premise is that the player is attempting to accumulate "Fame" by slowing building up different kinds of followers and fans. Each type of follower generates "Fame" which serves as a currency to purchase more followers which then compound.
                     </p>
                     <p>
-                        The project was built only using HTML, CSS, JavaScript, and Jquery. One major development goal of the project was to be able to easily add and remove diferent followers and having all of their UI elements be generated programatically. One of the features is a custom follower tab where the user can input the title and properties of a new follower and have it appear in the game with all the necisary button and display information. Another problem I found interestng to solve was converting the very large numbers to shorter notation to fit in the UI elements. For example, it would display a number like 10 Billion--or 10,000,000,000.00--to 10.00B using log10 and other arithmatic functions. This was also my introduction of using CSS Flexbox to keep the follower UI elements orgaized in a pleasing way as elemets were added, subrtracted, and sorted.
+                        The project was built only using HTML, CSS, JavaScript, and Jquery. One major development goal of the project was to be able to easily add and remove different followers and having all of their UI elements be generated programmatically. One of the features is a custom follower tab where the user can input the title and properties of a new follower and have it appear in the game with all the necessary button and display information. Another problem I found interesting to solve was converting the very large numbers to shorter notation to fit in the UI elements. For example, it would display a number like 10 Billion--or 10,000,000,000.00--to 10.00B using log10 and other arithmetic functions. This was also my introduction of using CSS Flexbox to keep the UI elements organized in a pleasing way as elements were added, subtracted, and sorted.
                     </p>
                     <p>
                         This project is still in development.</p>
@@ -108,12 +116,14 @@
 
             <div class="projectDiv">
                 <div id="drivingSchedule" class="projectHeader">
-                    <div class="readMoreButton">Read More</div>
+                    <div class="readMoreButton">
+                        <div class="readMoreText">Read More</div>
+                    </div>
                 </div>
 
                 <div class="projectDetails">
                     <p>
-                        This Driving Schelue Generator was my first project outside the ones assigned by the FreeCodeCamp courses I used to learn web development. I had been hired as an actor on a national childrns' theatre tour where the entire company, incluidng actors, were responsible for driving a set van and passanger van all over the country. We used this app to schedlue hundreds of hours and thougsands of miles of driving.
+                        This <b>Driving Schedule Generator</b> was my first project outside the ones assigned by the FreeCodeCamp courses I used to learn web development. I had been hired as an actor on a national childrns' theatre tour where the entire company, including actors, were responsible for driving a set van and passenger van all over the country. We used this app to schedule hundreds of hours and thousands of miles of driving.
                     </p>
                     <p>
                         This app was designed to use a variety of rules to generate a fair and balanced driving schedule. These rules took into account how often somebody had driven a vehicle, who had worked as a navigator, building in rest shifts, and pairing drivers and navigators evenly. I achieved this by assigning each rule a numerical weight and scoring the most viable permutations against each other. Troubleshooting the schedule was difficult but very interesting as the patterns that developed were not always as expected and could wade into some pretty high-level math theory waters. </p>
@@ -131,20 +141,16 @@
     </section>
 
     <section id="contact">
+
+        <div id="socialMediaLinks">
+            <ion-icon name="logo-linkedin" class="socialMediaIcon"></ion-icon>
+            <ion-icon name="logo-github" class="socialMediaIcon"></ion-icon>
+        </div>
+
         <div id="formDiv">
+
             <form>
-                Your Name*: <input id="contactName" type="text" required>
-
-                Your Email Address*: <input id="contactEmail" type="email" required>
-
-                Your Phone Number: <input id="contactPhone" type="text">
-
-                Message*: <input id="contactMessage" type="text" required>
-                
-                * indicates a required field
-
-                <input id="contactSubmit" type="submit">
-
+                <input id="sendEmailButton" type="button" value="Send me an eMail" onclick="window.location.href='mailto:dirwin123@gmail.com'">
             </form>
         </div>
     </section>

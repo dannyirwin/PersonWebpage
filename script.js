@@ -31,10 +31,10 @@ for (let i = 0; i < readMoreButtonArr.length; i++) {
         var content = this.parentElement.nextElementSibling;
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
-            this.innerHTML = "Read More";
+            this.firstElementChild.innerHTML = "Read More";
         } else {
             content.style.maxHeight = content.scrollHeight + 10 + "px";
-            this.innerHTML = "Read Less";
+            this.firstElementChild.innerHTML = "Read Less";
         }
     });
 }
