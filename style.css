@@ -25,21 +25,23 @@ body {
 }
 
 background {
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-
-    background: var(--color2);
-    background-image: url(images/SelfieExperiment.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    content: "";
+    display: block;
     position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     z-index: -10;
 
 
+    background: url(images/SelfieExperiment.png) no-repeat center center;
+    -webkit-background-size: center;
+    -moz-background-size: center;
+    -o-background-size: center;
+    background-size: center;
+
+    background-color: var(--color2);
 }
 
 h1 {
@@ -107,7 +109,6 @@ nav {
     justify-content: center;
 }
 
-
 .nav-link {
     text-decoration: none;
     color: var(--color5);
@@ -160,6 +161,8 @@ nav {
 
 #rolesContainer {
     text-align: center;
+    justify-content: center;
+    align-content: center;
     white-space: nowrap;
     color: var(--color3);
     display: flex;
@@ -305,6 +308,21 @@ nav {
 
 }
 
+#FCCTicTacToe {
+    background-image: url(./images/FCCTicTacToe.png);
+        background-size: cover;
+}
+
+#FCCSimon {
+    background-image: url(./images/FCCSimonGame.png);
+    background-size: cover;
+}
+
+#FCCCalculator {
+    background-image: url(./images/FCCCalculator.png);
+    background-size: stretch;
+}
+
 /*=====Developer=====*/
 
 #developer {
@@ -375,8 +393,75 @@ input {
 
 @media only screen and (max-width: 600px) {
 
-    section {
-        padding: 10px;
+    background {
+        background: url(images/SelfieExperiment.png) no-repeat cover cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
 
+    section {
+        padding: 72px 10px;
+        max-width: 100vw;
+    }
+
+    /*=====Navigation=====*/
+
+    #navLineContainer {
+        display: none;
+    }
+
+    nav {
+        border-bottom: 5px solid var(--color3);
+        width: 100vw;
+    }
+
+    .nav-link {
+        padding: none;
+        font-size: 20px;
+
+    }
+
+    /*=====Welcome=====*/
+
+    #welcome {
+        flex-direction: column;
+    }
+
+
+    #nameContainer {
+        display: inline;
+        margin: auto;
+        padding: auto;
+        flex: 1 1 auto;
+    }
+
+    #taglineContainer {
+        margin: 10px;
+        padding: auto;
+        width: auto;
+        flex: 2 2 initial;
+    }
+
+    /*=====About Me=====*/
+
+    #skills {
+        margin: 20px;
+    }
+
+    /*=====Projects=====*/
+
+    #projects {
+        flex-direction: column;
+    }
+
+    #projectsHeader {
+        margin: auto;
+    }
+
+    .projectDiv {
+        margin: 30px 10px;
+        width: auto;
+    }
 }
