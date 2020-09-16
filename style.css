@@ -248,7 +248,7 @@ nav {
 
 .projectDiv {
     width: 100%;
-    margin: 20px;
+    margin: 50px 20px;
     border: 5px solid var(--color2);
     display: flex;
     flex-direction: column;
@@ -320,6 +320,11 @@ nav {
 
 #FCCCalculator {
     background-image: url(./images/FCCCalculator.png);
+    background-size: stretch;
+}
+
+#FCCLandingPage {
+    background-image: url(./images/FCCLandingPage.png);
     background-size: stretch;
 }
 
