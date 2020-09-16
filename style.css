@@ -315,7 +315,7 @@ nav {
 
 #FCCSimon {
     background-image: url(./images/FCCSimonGame.png);
-    background-size: cover;
+    background-size: stretch;
 }
 
 #FCCCalculator {
