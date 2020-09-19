@@ -1,210 +1,196 @@
 :root {
-    --header-font: 'Alata', sans-serif;
-    --main-font: 'Raleway', sans-serif;
-    --dot-font: 'Raleway Dots', sans-serif;
+	--header-font: 'Alata', sans-serif;
+	--main-font: 'Raleway', sans-serif;
+	--dot-font: 'Raleway Dots', sans-serif;
 
-    --color1: #CB441A;
-    --color2: #29335C;
-    --color3: #F3A712;
-    --color4: #A8C686;
-    --color5: #AECADB;
+	--color1: #CB441A;
+	--color2: #29335C;
+	--color3: #F3A712;
+	--color4: #A8C686;
+	--color5: #AECADB;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /*General*/
 
 body {
-
-    font-family: var(--main-font);
-    color: var(--color1);
+	font-family: var(--main-font);
+	color: var(--color1);
+	scroll-behavior: smooth;
 }
 
 background {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-
-
-    background: url(images/SelfieExperiment.png) no-repeat center center;
-    -webkit-background-size: center;
-    -moz-background-size: center;
-    -o-background-size: center;
-    background-size: center;
-
-    background-color: var(--color2);
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url(images/SelfieExperiment.png) no-repeat center center;
+	-webkit-background-size: center;
+	-moz-background-size: center;
+	-o-background-size: center;
+	background-size: center;
+	background-color: var(--color2);
 }
 
 h1 {
-    font-family: var(--header-font);
-    font-size: 40px;
+	font-family: var(--header-font);
+	font-size: 40px;
 }
 
 h2 {
-    font-family: var(--header-font);
-
+	font-family: var(--header-font);
 }
 
 
 h3 {
-    font-size: 20px;
-    font-weight: 200;
-    font-family: var(--main-font);
+	font-size: 20px;
+	font-weight: 200;
+	font-family: var(--main-font);
 }
 
 p {
-    padding: 5px;
+	padding: 5px;
 }
 
 section {
-
-    padding: 100px;
-    left: 0;
-    background-repeat: no-repeat;
-
-    display: flex;
-    max-width: 100vw;
-
-    margin-top: 100px;
+	padding: 100px;
+	left: 0;
+	background-repeat: no-repeat;
+	display: flex;
+	max-width: 100vw;
+	margin-top: 100px;
 }
 
 .line {
-    background: var(--color3);
-    width: 5%;
-    height: 3px;
-    margin: 0px 10px;
-    display: flex;
-    align-self: center;
-
-    transition: width 2s;
-    transition-timing-function: ease-in-out;
+	background: var(--color3);
+	width: 5%;
+	height: 3px;
+	margin: 0px 10px;
+	display: flex;
+	align-self: center;
+	transition: width 2s;
+	transition-timing-function: ease-in-out;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Nab Bar*/
 
 nav {
-    font-family: var(--header-font);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
+	font-family: var(--header-font);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: var(--color5);
-    font-size: 24px;
-    padding: 10px 20px;
-    flex: 1 1 auto;
-    white-space: nowrap;
-    background: var(--color2)
+	text-decoration: none;
+	color: var(--color5);
+	font-size: 24px;
+	padding: 10px 20px;
+	flex: 1 1 auto;
+	white-space: nowrap;
+	background: var(--color2);
 }
 
 #navLineContainer {
-    width: 100%;
-    display: flex;
-    align-content: center;
+	width: 100%;
+	display: flex;
+	align-content: center;
 }
 
 
 /*=====Welcome Section=====*/
 
 #welcome {
-    max-height: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
+	max-height: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
 }
 
 /* Name box*/
 #nameContainer {
-    margin: 50px 100px;
-    padding: 10px;
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    align-self: flex-start;
+	margin: 50px 100px;
+	padding: 10px;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	align-self: flex-start;
 }
 
 #name {
-    text-align: center;
-    white-space: nowrap;
-    font-size: 40px;
-    color: var(--color5);
-
-    flex: 2 2 auto;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 40px;
+	color: var(--color5);
+	flex: 2 2 auto;
 }
 
 #nameLine {
-    background: var(--color3);
+	background: var(--color3);
 
 }
 
 #rolesContainer {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    white-space: nowrap;
-    color: var(--color3);
-    display: flex;
-    font-size: 24px;
-
-
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	white-space: nowrap;
+	color: var(--color3);
+	display: flex;
+	font-size: 24px;
 }
 
 .role {
-    color: var(--color5);
-    margin: 5px;
-    font-weight: 400;
+	color: var(--color5);
+	margin: 5px;
+	font-weight: 400;
 }
 
 #spaceDiv {
-    flex: 2 2 auto;
-    width: 200px;
+	flex: 2 2 auto;
+	width: 200px;
 }
 
 /*Tagline Box*/
 
 #taglineContainer {
-    display: flex;
-    align-self: center;
-    margin: 20px;
-    Padding: 20px;
-    border: 5px solid var(--color3);
-    width: 30vw;
-
+	display: flex;
+	align-self: center;
+	margin: 20px;
+	Padding: 20px;
+	border: 5px solid var(--color3);
+	width: 30vw;
 }
 
 #tagline {
-    color: var(--color5);
+	color: var(--color5);
 }
 
 #quote {
-    flex: 2 2 auto;
-    padding: 20px;
-    margin: 20px;
-    background: var(--color2);
-    color: var(--color5);
-    border-left: solid 5px var(--color3);
+	flex: 2 2 auto;
+	padding: 20px;
+	margin: 20px;
+	background: var(--color2);
+	color: var(--color5);
+	border-left: solid 5px var(--color3);
 }
 
 
@@ -212,261 +198,246 @@ nav {
 /*=====About Me=====*/
 
 #aboutMe {
-    background: white;
-    color: var(--color1);
-    flex-direction: column;
+	background: white;
+	color: var(--color1);
+	flex-direction: column;
 }
 
 #skills {
-    margin: 20px 100px;
+	margin: 20px 100px;
 }
 
 /*=====Projects=====*/
 
 #projects {
-    background: white;
-    display: flex;
-    flex-direction: row;
-    border-top: 30px solid var(--color3);
-    border-bottom: 30px solid var(--color3);
+	background: white;
+	display: flex;
+	flex-direction: row;
+	border-top: 30px solid var(--color3);
+	border-bottom: 30px solid var(--color3);
 }
 
 #projectsHeader {
-    margin: 50px;
-    max-width: 30vw;
-    display: flex;
-    flex: 1 1 auto;
-    align-self: flex-start;
-    color: var(--color2);
-    border-bottom: 5px solid var(--color2);
+	margin: 50px;
+	max-width: 30vw;
+	display: flex;
+	flex: 1 1 auto;
+	align-self: flex-start;
+	color: var(--color2);
+	border-bottom: 5px solid var(--color2);
 }
 
 #projectsContainer {
-    width: 100%;
+	width: 100%;
 }
 
 
 .projectDiv {
-    width: 100%;
-    margin: 50px 20px;
-    border: 5px solid var(--color2);
-    display: flex;
-    flex-direction: column;
-
+	width: 100%;
+	margin: 50px 20px;
+	border: 5px solid var(--color2);
+	display: flex;
+	flex-direction: column;
 }
 
 .projectHeader {
-    height: 150px;
-    max-height: 150px;
-    display: flex;
-
+	height: 150px;
+	max-height: 150px;
+	display: flex;
 }
 
 .readMoreButton {
-    width: 100%;
-    text-align: center;
-    align-self: flex-end;
-    padding: 2px 0;
-    color: var(--color3);
-    background: rgba(41, 51, 92, 0.7);
-    /* This is the same as color2 but with alpha set lower*/
+	width: 100%;
+	text-align: center;
+	align-self: flex-end;
+	padding: 2px 0;
+	color: var(--color3);
+	background: rgba(41, 51, 92, 0.7);
+	/* This is the same as color2 but with alpha set lower*/
 }
 
 .readMoreText {
-    font-weight: 1000;
-    color: white;
-
-
+	font-weight: 1000;
+	color: white;
 }
 
 .projectDetails {
-    background: white;
-    max-height: 0px;
-    overflow: hidden;
-    color: var(--color2);
-    transition: max-height 0.2s ease-out;
-
+	background: white;
+	max-height: 0px;
+	overflow: hidden;
+	color: var(--color2);
+	transition: max-height 0.2s ease-out;
 }
 
-
 #sightless {
-    background: black;
-    background-image: url(./images/SightlessBanner.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+	background: black;
+	background-image: url(./images/SightlessBanner.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 #fameGame {
-    background-image: url(./images/FameGame.png);
-    background-size: cover;
-
+	background-image: url(./images/FameGame.png);
+	background-size: cover;
 }
 
 #drivingSchedule {
-    background-image: url(./images/DrivingRotation.png);
-    background-size: cover;
-
+	background-image: url(./images/DrivingRotation.png);
+	background-size: cover;
 }
 
 #FCCTicTacToe {
-    background-image: url(./images/FCCTicTacToe.png);
-        background-size: cover;
+	background-image: url(./images/FCCTicTacToe.png);
+	background-size: cover;
 }
 
 #FCCSimon {
-    background-image: url(./images/FCCSimonGame.png);
-    background-size: stretch;
+	background-image: url(./images/FCCSimonGame.png);
+	background-size: stretch;
 }
 
 #FCCCalculator {
-    background-image: url(./images/FCCCalculator.png);
-    background-size: stretch;
+	background-image: url(./images/FCCCalculator.png);
+	background-size: stretch;
 }
 
 #FCCLandingPage {
-    background-image: url(./images/FCCLandingPage.png);
-    background-size: stretch;
+	background-image: url(./images/FCCLandingPage.png);
+	background-size: stretch;
 }
 
 /*=====Developer=====*/
 
 #developer {
-    display: none;
-    background: var(--color4);
+	display: none;
+	background: var(--color4);
 }
 
 /*=====Theatre=====*/
 
 #theatre {
-    display: none;
-    background: var(--color5);
+	display: none;
+	background: var(--color5);
 }
 
 /*=====Contact=====*/
 
 #contact {
-    background: var(--color5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-    padding: 30px;
-    margin-bottom: 50vh;
+	background: var(--color5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding: 30px;
+	margin-bottom: 50vh;
 }
 
 footer {
-    background: var(--color1);
-
+	background: var(--color1);
 }
 
 #socialMediaLinks {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .socialMediaIcon {
-    font-size: 42px;
-    color: var(--color2);
-    margin: 20px;
+	font-size: 42px;
+	color: var(--color2);
+	margin: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 100%;
 }
 
 input {
-    margin: auto;
+	margin: auto;
 }
 
 #sendEmailButton {
-    color: var(--color2);
-    font-family: var(--header-font);
-    font-size: 24px;
-    padding: 10px 50px;
-    width: 300px;
-
-
-    background: white;
-    border: 5px solid var(--color3)
+	color: var(--color2);
+	font-family: var(--header-font);
+	font-size: 24px;
+	padding: 10px 50px;
+	width: 300px;
+	background: white;
+	border: 5px solid var(--color3)
 }
-
 
 @media only screen and (max-width: 600px) {
 
-    background {
-        background: url(images/SelfieExperiment.png) no-repeat cover cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
+	background {
+		background: url(images/SelfieExperiment.png) no-repeat cover cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 
-    section {
-        padding: 72px 10px;
-        max-width: 100vw;
-    }
+	section {
+		padding: 72px 10px;
+		max-width: 100vw;
+	}
 
-    /*=====Navigation=====*/
+	/*=====Navigation=====*/
 
-    #navLineContainer {
-        display: none;
-    }
+	#navLineContainer {
+		display: none;
+	}
 
-    nav {
-        border-bottom: 5px solid var(--color3);
-        width: 100vw;
-    }
+	nav {
+		border-bottom: 5px solid var(--color3);
+		width: 100vw;
+	}
 
-    .nav-link {
-        padding: none;
-        font-size: 20px;
+	.nav-link {
+		padding: none;
+		font-size: 20px;
+	}
 
-    }
+	/*=====Welcome=====*/
 
-    /*=====Welcome=====*/
+	#welcome {
+		flex-direction: column;
+	}
 
-    #welcome {
-        flex-direction: column;
-    }
+	#nameContainer {
+		display: inline;
+		margin: auto;
+		padding: auto;
+		flex: 1 1 auto;
+	}
 
+	#taglineContainer {
+		margin: 10px;
+		padding: auto;
+		width: auto;
+		flex: 2 2 initial;
+	}
 
-    #nameContainer {
-        display: inline;
-        margin: auto;
-        padding: auto;
-        flex: 1 1 auto;
-    }
+	/*=====About Me=====*/
 
-    #taglineContainer {
-        margin: 10px;
-        padding: auto;
-        width: auto;
-        flex: 2 2 initial;
-    }
+	#skills {
+		margin: 20px;
+	}
 
-    /*=====About Me=====*/
+	/*=====Projects=====*/
 
-    #skills {
-        margin: 20px;
-    }
+	#projects {
+		flex-direction: column;
+	}
 
-    /*=====Projects=====*/
+	#projectsHeader {
+		margin: auto;
+	}
 
-    #projects {
-        flex-direction: column;
-    }
-
-    #projectsHeader {
-        margin: auto;
-    }
-
-    .projectDiv {
-        margin: 30px 10px;
-        width: auto;
-    }
+	.projectDiv {
+		margin: 30px 10px;
+		width: auto;
+	}
 }
