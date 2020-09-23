@@ -21,7 +21,6 @@
 body {
 	font-family: var(--main-font);
 	color: var(--color1);
-	scroll-behavior: smooth;
 }
 
 background {
@@ -86,6 +85,10 @@ a {
 	color: inherit;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 /* Nab Bar*/
 
 nav {
@@ -108,6 +111,7 @@ nav {
 	white-space: nowrap;
 	background: var(--color2);
 }
+
 
 #navLineContainer {
 	width: 100%;
@@ -199,7 +203,7 @@ nav {
 
 #aboutMe {
 	background: white;
-	color: var(--color1);
+	color: var(--color2);
 	flex-direction: column;
 }
 
@@ -253,6 +257,7 @@ nav {
 	padding: 2px 0;
 	color: var(--color3);
 	background: rgba(41, 51, 92, 0.7);
+	cursor: pointer;
 	/* This is the same as color2 but with alpha set lower*/
 }
 
