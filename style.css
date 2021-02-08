@@ -205,6 +205,7 @@ nav {
 	background: white;
 	color: var(--color2);
 	flex-direction: column;
+	padding: 15vw;
 }
 
 #skills {
@@ -256,14 +257,17 @@ nav {
 	align-self: flex-end;
 	padding: 2px 0;
 	color: var(--color3);
-	background: rgba(41, 51, 92, 0.7);
+	background: rgba(41, 51, 92, 0.7);	/* This is the same as color2 but with alpha set lower*/
 	cursor: pointer;
-	/* This is the same as color2 but with alpha set lower*/
-}
-
-.readMoreText {
 	font-weight: 1000;
 	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.readMoreText, .projectLink {
+	margin: 0 10px;
 }
 
 .projectDetails {
@@ -272,6 +276,11 @@ nav {
 	overflow: hidden;
 	color: var(--color2);
 	transition: max-height 0.2s ease-out;
+}
+
+#orbitalPhysics {
+	background-image: url(./images/OrbitalPhysics.png);
+	background-size:cover;
 }
 
 #sightless {
@@ -429,6 +438,20 @@ input {
 
 	#skills {
 		margin: 20px;
+	}
+
+	#aboutMe {
+		padding: 30px;
+
+	}
+
+	.skillsContainer {
+	
+	}
+	
+	.skillsList {
+		display: flex;
+		flex-direction;
 	}
 
 	/*=====Projects=====*/

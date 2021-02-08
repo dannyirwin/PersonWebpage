@@ -10,22 +10,16 @@ function growLine() {
 
 function addReadMoreEventListeners() {
 	for (let i = 0; i < readMoreButtonArr.length; i++) {
-		readMoreButtonArr[i].addEventListener("click", function () {
-			let content = this.parentElement.nextElementSibling;
-			for (let i = 0; i < readMoreButtonArr.length; i++) { // put in onload or ready function
 				readMoreButtonArr[i].addEventListener("click", () => {
-					const content = this.parentElement.nextElementSibling;
-
-					if (content.style.maxHeight) {
-						content.style.maxHeight = null;
+					const projectDetails = readMoreButtonArr[i].parentElement.nextElementSibling;
+					if (projectDetails.style.maxHeight) {
+						projectDetails.style.maxHeight = null;
 						this.firstElementChild.innerHTML = "Read More";
 					} else {
-						content.style.maxHeight = content.scrollHeight + 10 + "px";
+						projectDetails.style.maxHeight = projectDetails.scrollHeight + 10 + "px";
 						this.firstElementChild.innerHTML = "Read Less";
 					}
 				});
-			}
-		});
 	}
 }
 
