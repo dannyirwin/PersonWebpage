@@ -278,6 +278,20 @@ nav {
 	transition: max-height 0.2s ease-out;
 }
 
+#fractals {
+	background-image: url(/images/FractalsBanner.png) ;
+	background-size: contain;
+}
+
+#fractalsGif {
+	background-image: url(/images/fractals-full.gif);
+	background-size: contain;
+	height: 300px;
+	width: 300px;
+	border: 5px solid var(--color2);
+
+}
+
 #orbitalPhysics {
 	background-image: url(./images/OrbitalPhysics.png);
 	background-size:cover;

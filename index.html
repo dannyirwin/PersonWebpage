@@ -17,14 +17,19 @@
         </div>
         <a
            class="nav-link"
+           href="#projects">
+            Projects
+        </a>
+        <a
+           class="nav-link"
            href="#aboutMe">
             About Me
         </a>
-        <a
-           class="nav-link" ref="#projects">
-            Projects
+        <a 
+            class="nav-link"
+            href="#contact">
+            Get in Touch
         </a>
-        <a class="nav-link" href="#contact">Get in Touch</a>
     </nav>
 
     <section id="welcome">
@@ -43,41 +48,24 @@
         </div>
     </section>
 
-    <section id="aboutMe">
-        <p>Hello!</p>
-        <p> I am a young professional making the transition from a career in the fine arts into the world of software development.</p>
-        <p> With a veracious love of learning and a variety of professional skills, I pride myself on bringing creative solutions to all my work. While my background and formal education is in the fine arts, I have a deep love of acquiring and improving new skills. To that end, I have found software development the perfect marriage of both creative and technical problem solving. Whether working in customer service, on the stage, or in development, I take an "audience" centric approach: how does everything that I do, big or small, contribute to the user's experience.
-        </p>
-        <p class="skillsContainer">
-            <div class="skillsList">
-            <h4>Proficiencies and Familiarities</h4>
-            JavaScript<span>&#8226;</span> 
-            HTML<span>&#8226;</span> 
-            CSS <span>&#8226;</span> 
-            JSON & APIs <span>&#8226;</span> 
-            React <span>&#8226;</span> 
-            Ruby <span>&#8226;</span> 
-            SASS <span>&#8226;</span> 
-            Bootstrap <span>&#8226;</span> 
-            jQuery <span>&#8226;</span> 
-            Unreal engine
-            </div>
-        </p>
-
-
-
-        <!--<ul id="skills">
-            <li> JavaScript, CSS, HTML proficient(FreeCodeCamp) </li>
-			<li> Familiarity with SASS, Bootstrap, jQuery, and React </li>
-            <li> Familiarity with full-lifecycle indie app development in Unreal</li>
-            <li> Professional actor and music director for 10+ years on the east coast and on a national tour</li>
-            <li> Customer experience professional in restaurants and live entertainment industry for 6 years</li>
-        </ul> -->
-    </section>
-
     <section id="projects">
         <h1 id="projectsHeader">Projects</h1>
         <div id="projectsContainer">
+
+            <div class="projectDiv">
+                <div id="fractals" class="projectHeader">
+                    <div class="readMoreButton">
+                        <div class="readMoreText">Read More</div>
+                    </div>
+                </div>
+                <div class="projectDetails">
+                    <div id="fractalsGif"></div>
+                    <p>
+                        Talk Talk Talk
+                    </p>
+                </div>
+            </div>
+
             <div class="projectDiv">
                 <div id="orbitalPhysics" class="projectHeader">
                     <div class="readMoreButton">
@@ -94,9 +82,9 @@
                     <p>
                         On the technical side, I had two main goals for this project: to use the canvas HTML tag and to try my hand at some physics math. In order to make the work on the canvas more streamline, my thought was to build all the different drawing functions into the class objects depicted.  Each body has access to different draw functions and compiles the correct ones based on settings and parameters in its own render function. I found this made it very easy to slowly layer on all the visuals I wanted to add. As for the physics, the most challenging part was to fill in the trigonometry gaps in my knowledge and to translate the physics theory to pure arithmetic and then to usable and iterable pieces. Here I ran into challenges with regards to simplifying aspects and losing accuracy. For example, was it better to reduce the distances between objects to the pixels between them or use their "actual" distances in kilometers? Should I render accurate sizes of bodies (I didn't in the end) and should I bother with realistic mass and velocity scales?  I tried to keep this project simple and clean but would love to go deeper at some point to make it a bit less general. 
                     </p>
-                
                 </div>
             </div>
+
             <div class="projectDiv">
                 <div id="sightless" class="projectHeader">
                     <div class="readMoreButton">
@@ -220,6 +208,36 @@
             <p> <a href="https://github.com/dannyirwin" target=_blank>Click to see more projects on GitHub </a></p>
             <p> <a href="https://codepen.io/Dirwin" target=_blank>Click to see my early FreeCodeCamp projects on Codepen </a></p>
         </div>
+    </section>
+
+    <section id="aboutMe">
+        <p>Hello!</p>
+        <p> I am a young professional making the transition from a career in the fine arts into the world of software development.</p>
+        <p> With a veracious love of learning and a variety of professional skills, I pride myself on bringing creative solutions to all my work. While my background and formal education is in the fine arts, I have a deep love of acquiring and improving new skills. To that end, I have found software development the perfect marriage of both creative and technical problem solving. Whether working in customer service, on the stage, or in development, I take an "audience" centric approach: how does everything that I do, big or small, contribute to the user's experience.
+        </p>
+        <p class="skillsContainer">
+            <div class="skillsList">
+            <h4>Proficiencies and Familiarities</h4>
+            JavaScript<span>&#8226;</span> 
+            HTML<span>&#8226;</span> 
+            CSS <span>&#8226;</span> 
+            JSON & APIs <span>&#8226;</span> 
+            React <span>&#8226;</span> 
+            Ruby <span>&#8226;</span> 
+            SASS <span>&#8226;</span> 
+            Bootstrap <span>&#8226;</span> 
+            jQuery <span>&#8226;</span> 
+            Unreal engine
+            </div>
+        </p>
+
+        <!--<ul id="skills">
+            <li> JavaScript, CSS, HTML proficient(FreeCodeCamp) </li>
+			<li> Familiarity with SASS, Bootstrap, jQuery, and React </li>
+            <li> Familiarity with full-lifecycle indie app development in Unreal</li>
+            <li> Professional actor and music director for 10+ years on the east coast and on a national tour</li>
+            <li> Customer experience professional in restaurants and live entertainment industry for 6 years</li>
+        </ul> -->
     </section>
 
     <section id="contact">
