@@ -279,12 +279,12 @@ nav {
 }
 
 #fractals {
-	background-image: url(/images/FractalsBanner.png) ;
+	background-image: url(./images/FractalsBanner.png) ;
 	background-size: contain;
 }
 
 #fractalsGif {
-	background-image: url(/images/fractals-full.gif);
+	background-image: url(./images/fractals-full.gif);
 	background-size: contain;
 	height: 300px;
 	width: 300px;
